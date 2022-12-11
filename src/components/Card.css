@@ -1,0 +1,21 @@
+.cardWrapper {
+  width: 300px;
+  height: 425px;
+  overflow: hidden;
+  background-color: aquamarine;
+  border-radius: 20px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  transition: 1s;
+}
+
+.cardWrapper img {
+  width: 275px;
+  height: 225px;
+  padding-top: 25px;
+  border-radius: 20px;
+}
+
+.cardWrapper:hover {
+  scale: 1.05;
+}
