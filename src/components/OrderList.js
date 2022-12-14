@@ -16,6 +16,13 @@ const OrderList = (props) => {
     const data = await response.json();
     console.log(data);
     const fetchedOrders = [];
+    //Let's make sure JSON doesn't return objects when we want arrays
+    for (const key in data) {
+      if (typeof data[key].fruits === "object") {
+        let convertedValues = Object.values(data[key].fruits);
+        data[key].fruits = convertedValues;
+      }
+    }
 
     for (const key in data) {
       fetchedOrders.push({
