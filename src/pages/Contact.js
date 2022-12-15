@@ -8,8 +8,8 @@ const Contact = () => {
       </div>
       <div className="contactContent">
         <p>
-          For questions and concerns, please send a fax to your local fire
-          department.
+          Imagine that this page contains info about the fruit-selling
+          FruitShoppe company.
         </p>
       </div>
     </div>
